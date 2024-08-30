@@ -8,7 +8,7 @@ const GenerateContent = () => {
   const handleGenerateContent = async () => {
     setLoading(true);
     try {
-      const res = await fetch("https://tinxy.onrender.com:10000/api/content/generate", {
+      const res = await fetch("https://tinxy.onrender.com/api/content/generate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
