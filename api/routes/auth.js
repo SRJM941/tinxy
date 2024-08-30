@@ -44,7 +44,7 @@ passport.use(
     {
       clientID: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-      callbackURL: "http://localhost:5000/api/auth/google/callback", // Correct callback URL path
+      callbackURL: "https://tinxy.onrender.com/api/auth/google/callback", // Correct callback URL path
     },
     async (accessToken, refreshToken, profile, done) => {
       try {
@@ -85,7 +85,7 @@ router.get(
     });
 
     // Redirect with token, replace this with an appropriate client URL if necessary
-    res.redirect(`http://localhost:3000/generate?token=${token}`);
+    res.redirect(`https://tinxy-frontend.onrender.com/generate?token=${token}`);
   }
 );
 
