@@ -9,7 +9,7 @@ const Login = () => {
 
   const handleGoogleLogin = () => {
     // Redirect to the backend Google OAuth endpoint
-    window.location.href = "http://localhost:5000/api/auth/google";
+    window.location.href = "https://tinxy.onrender.com:10000/api/auth/google";
   };
 
   <div className="mt-6">
@@ -25,7 +25,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     // Handle regular login
-    const res = await fetch("http://localhost:5000/api/auth/login", {
+    const res = await fetch("https://tinxy.onrender.com:10000/api/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

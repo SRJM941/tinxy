@@ -10,7 +10,7 @@ const Signup = () => {
   const handleSignup = async (e) => {
     e.preventDefault();
     // Handle signup
-    const res = await fetch("http://localhost:5000/api/auth/register", {
+    const res = await fetch("https://tinxy.onrender.com:10000/api/auth/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
